@@ -1,6 +1,12 @@
 // https://leetcode.com/problems/function-composition/submissions/?source=submission-ac
 type F = (x: number) => number;
 
+/**
+ * Composes an array of functions into a single function that applies each function in reverse order.
+ *
+ * @param functions An array of functions to compose
+ * @returns A new function that applies the composed functions in reverse order
+ */
 function compose(functions: F[]): F {
   // we can call the function by index()
   // loop backwards with forloop
