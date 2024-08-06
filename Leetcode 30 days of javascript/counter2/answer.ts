@@ -22,10 +22,3 @@ function createCounter2(init: number): Counter {
     },
   };
 }
-
-/**
- * const counter = createCounter2(5)
- * counter.increment(); // 6
- * counter.reset(); // 5
- * counter.decrement(); // 4
- */
