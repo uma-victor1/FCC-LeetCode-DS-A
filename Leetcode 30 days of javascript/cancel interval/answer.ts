@@ -3,7 +3,7 @@ type cancelJSONValue =
   | boolean
   | number
   | string
-  | JSONValue[]
+  | cancelJSONValue[]
   | { [key: string]: cancelJSONValue };
 type cancelFn = (...args: cancelJSONValue[]) => void;
 
