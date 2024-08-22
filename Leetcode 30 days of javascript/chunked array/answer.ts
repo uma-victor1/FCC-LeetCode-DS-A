@@ -11,11 +11,11 @@ type Obj = Record<string, ChunkedJSONValue> | Array<ChunkedJSONValue>;
 // return [[],[]] chunked array of size.
 
 function chunk(arr: Obj[], size: number): Obj[][] {
-  let newChunkedArr = [];
+  let chunkedArr: Obj[][] = [];
 
   for (let i = 0; i < arr.length; i += size) {
     let cut = i + size;
-    newChunkedArr.push(arr.slice(i, cut));
+    chunkedArr.push(arr.slice(i, cut));
   }
-  return newChunkedArr;
+  return chunkedArr;
 }
